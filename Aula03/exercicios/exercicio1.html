@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --cor-primaria: #131730;
+            --cor-secundaria: #f9f9f9;
+            --cor-roxa: #9353FF;
+            --neutro: #F9F9F9;
+            --preto: #131730;
+            --fonte-titulo: "Inter", serif;
+            --fonte-texto: 'Inter', serif;
+            --degrade-azul: linear-gradient(180deg, #000000 0%, #f9f9f9 100%);
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 729px;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+            margin: 20px auto;
+            border: 2px solid var(--preto);
+            padding: 40px;
+            border-radius: 2rem;
+
+        }
+
+        h1 {
+            font-family: var(--fonte-texto);
+        }
+
+        input {
+            padding: 15px 7px;
+            width: 50%;
+            border-radius: 0.5rem;
+        }
+        input::placeholder {
+            font-family: var(--fonte-texto);
+            font-size: 16px;
+            color: #6c757d;
+        }
+
+        button {
+            font-family: var(--fonte-texto);
+            font-size: 16px;
+            background-color: var(--cor-roxa);
+            color: var(--neutro);
+            padding: 9px 18px;
+            border: none;
+            border-radius: 0.5rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="checkboxContainer">
+            <label for="checkbox-1">
+                <input type="checkbox" class="checkbox-input" id="checkbox-1"/>
+                <div class="checkbox-customizado checked"></div>
+            </label>
+        </div>
+    </main>
+</body>
+
+</html>

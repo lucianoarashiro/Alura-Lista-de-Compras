@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --cor-roxa: #9353FF;
+            --neutro: #F9F9F9;
+            --preto: #131730;
+        }
+
+        .checkbox-input {
+            display: none;
+        }
+
+        .checkbox-customizado {
+            width: 20px;
+            height: 20px;
+            background-color: var(--neutro);
+            /* border: 1px solid var(--preto); */
+            border-radius: 0.25rem;
+            cursor: pointer;
+        }
+
+        .checked {
+            background-color: var(--cor-roxa);
+            position: relative;
+        }
+
+        .checked:after {
+            content: "";
+            position: absolute;
+            left: 30%;
+            top: -10%;
+            width: 5px;
+            height: 14px;
+            padding: 1px 0px 1px 0px;
+            
+
+            border-top: 2px solid var(--neutro);
+            border-left: 2px solid var(--neutro);
+            transform: rotate(-140deg);
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="checkboxContainer">
+            <label for="checkbox-1">
+                <input type="checkbox" class="checkbox-input" id="checkbox-1"/>
+                <div class="checkbox-customizado checked"></div>
+            </label>
+        </div>
+    </main>
+</body>
+
+</html>
